@@ -112,7 +112,7 @@ export default function  SignUp() {
  const[credentials,setcredentials]= useState({ name: "", email: "", password: "", geolocation: ""})
   const handleSubmit = async(e) =>{
       e.preventDefault();
-      const response =  await fetch("https://foodeez.onrender.com/api/createuser", {
+      const response =  await fetch("https://foodeez-backend.onrender.com/api/createuser", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
